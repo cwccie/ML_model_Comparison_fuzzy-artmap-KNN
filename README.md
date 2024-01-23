@@ -1,33 +1,46 @@
 # ML_model_Comparison_fuzzy-artmap-KNN
 🔍 Explore and Compare Machine Learning Models Fuzzy ARTMAP and KNN
 
-To execute the provided Python script [ ml_model_comparison_knearest_fam.py ] on a newly installed machine (Ubuntu server for example), you will need to install several Python packages. Based on the script, the required packages include:
+## Overview
+This repository contains the Python script ml_model_comparison_knearest_fam.py, which is designed to compare machine learning models, specifically K-Nearest Neighbors (KNN) and Fuzzy ARTMAP (FAM), using the Breast Cancer Wisconsin Diagnostic dataset.
+
+### Quick Setup and Execution
+To simplify the setup and execution process, the repository includes a bash script ML_Model_Comparison_KNearest_FAM.sh. This script will automatically install all required dependencies and run the Python script on an Ubuntu server.
+
+**Steps to Run:
+Download the ML_Model_Comparison_KNearest_FAM.sh script from the repository.
+
+Make the script executable:
+chmod +x ML_Model_Comparison_KNearest_FAM.sh
+
+Execute the script:
+./ML_Model_Comparison_KNearest_FAM.sh
+
+This script will handle the installation of necessary packages, Python environment setup, and execution of the main Python script.This script will handle the installation of necessary packages, Python environment setup, and
+
+### Manual Setup
+**Required Packages
+To execute the provided Python script on a newly installed machine, you will need to install several Python packages including:
 
 numpy: For numerical operations.
 pandas: For data manipulation and analysis.
 matplotlib: For plotting and visualization.
 scikit-learn (sklearn): For machine learning algorithms and data preprocessing.
-torch (PyTorch): For tensor operations, which are essential for the Fuzzy ARTMAP (FAM) implementation.
+torch (PyTorch): For tensor operations, essential for the FAM implementation.
 ucimlrepo: For fetching datasets from the UCI Machine Learning Repository.
-To install these packages, you can use the following pip commands:
+Installation Commands
 
 pip install numpy pandas matplotlib scikit-learn torch ucimlrepo
-Additionally, since the script is intended to be run in a Jupyter Notebook environment (as indicated by the file name Additionally, since the script is intended to be run inML Model Comparison KNearest-FAM.ipynb), you might also consider installing Jupyter if you plan to use this environment. Jupyter can be installed using:
+Additional Considerations
+For a server environment, especially if it's headless, configure matplotlib to use a non-interactive backend like Agg.
+Check PyTorch's official installation guide for compatibility with your system's hardware, especially for GPU acceleration.
 
-pip install jupyter
-After installing Jupyter, you can launch a Jupyter Notebook server with:
+**Running the Script Manually
+After installing all required packages, copy the ml_model_comparison_knearest_fam.py script into a Python file or a Jupyter Notebook, and then run it in your preferred environment.
 
-
-System Requirements
-Ensure that your Ubuntu server has Python 3 installed. If not, you can install Python 3 using the following command:
+### System Requirements
+Ensure that your Ubuntu server has Python 3 installed. If not, install Python 3 and pip using:
 
 sudo apt update
 sudo apt install python3
 sudo apt install python3-pip
-
-Running the Script
-After installing all required packages, copy the script into a Python file (e.g., script.py) or a Jupyter Notebook, and then run it in your preferred environment.
-
-Additional Considerations
-For a server environment, especially if it's a headless server (no GUI), you might encounter issues with matplotlib if it attempts to use GUI-based backends. You can avoid this by configuring matplotlib to use a non-interactive backend like Agg.
-The torch package might have specific version requirements depending on your system's hardware, especially if you intend to use GPU acceleration. Make sure to check PyTorch's official installation guide for compatible versions.
