@@ -9,8 +9,6 @@ Original file is located at
 # 1 Start - pip install ucimlrepo / import / from [REQUIRED]
 """
 
-!pip install ucimlrepo # This is not included in Colab so you have to install it first
-
 # Importing necessary libraries
 import asyncio
 import cProfile
