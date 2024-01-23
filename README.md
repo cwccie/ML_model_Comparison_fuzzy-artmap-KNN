@@ -50,4 +50,4 @@ sudo apt install python3-pip
 
 ######################################################################################
 
-Thank You to CharlesPDX ( https://github.com/CharlesPDX ) for solving the code problems in this script that I could not find
+Thank You to CharlesPDX ( https://github.com/CharlesPDX ) for solving the code problems in this script that I could not
