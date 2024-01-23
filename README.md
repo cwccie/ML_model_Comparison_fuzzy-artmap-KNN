@@ -47,3 +47,7 @@ Ensure that your Ubuntu server has Python 3 installed. If not, install Python 3 
 sudo apt update
 sudo apt install python3
 sudo apt install python3-pip
+
+######################################################################################
+
+Thank You to CharlesPDX ( https://github.com/CharlesPDX ) for solving the code problems in this script that I could not find
