@@ -7,7 +7,7 @@ This repository contains the Python script ml_model_comparison_knearest_fam.py, 
 ### Quick Setup and Execution
 To simplify the setup and execution process, the repository includes a bash script ML_Model_Comparison_KNearest_FAM.sh. This script will automatically install all required dependencies and run the Python script on an Ubuntu server.
 
-**Steps to Run:
+**Steps to Run:**
 Download the ML_Model_Comparison_KNearest_FAM.sh script from the repository.
 
 Make the script executable:
@@ -19,7 +19,7 @@ Execute the script:
 This script will handle the installation of necessary packages, Python environment setup, and execution of the main Python script.This script will handle the installation of necessary packages, Python environment setup, and
 
 ### Manual Setup
-**Required Packages
+**Required Packages**
 To execute the provided Python script on a newly installed machine, you will need to install several Python packages including:
 
 numpy: For numerical operations.
@@ -35,7 +35,7 @@ Additional Considerations
 For a server environment, especially if it's headless, configure matplotlib to use a non-interactive backend like Agg.
 Check PyTorch's official installation guide for compatibility with your system's hardware, especially for GPU acceleration.
 
-**Running the Script Manually
+**Running the Script Manually**
 After installing all required packages, copy the ml_model_comparison_knearest_fam.py script into a Python file or a Jupyter Notebook, and then run it in your preferred environment.
 
 ### System Requirements
