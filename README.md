@@ -11,11 +11,20 @@ To simplify the setup and execution process, the repository includes a bash scri
 **Steps to Run:**
 Download the ML_Model_Comparison_KNearest_FAM.sh script from the repository.
 
-Make the script executable:
-chmod +x ML_Model_Comparison_KNearest_FAM.sh
+# Install Steps
 
-Execute the script:
-./ML_Model_Comparison_KNearest_FAM.sh
+Step 1 - Navigate to the folder you would like to install the environment and execute the following sudo nano command:
+sudo nano ML_Model_Comparison_KNearest_FAM.sh
+
+Step 2 - Paste Bash File Text content into nano. Read and understand the code and comments before using
+
+Step 3 - Write and exit nano (Ctr-X, Y, enter)
+
+Step 4 - Make the script executable:
+sudo chmod +x ML_Model_Comparison_KNearest_FAM.sh
+
+Step 5 - Execute the script:
+sudo ./ML_Model_Comparison_KNearest_FAM.sh
 
 This script will handle the installation of necessary packages, Python environment setup, and execution of the main Python script.This script will handle the installation of necessary packages, Python environment setup, and
 
