@@ -2,7 +2,7 @@
 🔍 Explore and Compare Machine Learning Models Fuzzy ARTMAP and KNN
 
 ## Overview
-This repository contains the Python script ml_model_comparison_knearest_fam.py, which is designed to compare machine learning models, specifically K-Nearest Neighbors (KNN) and Fuzzy ARTMAP (FAM), using the Breast Cancer Wisconsin Diagnostic dataset.
+This repository contains the Python script ml_model_comparison_knearest_fam.py, which is designed to compare machine learning models, specifically K-Nearest Neighbors (KNN) and Fuzzy ARTMAP (FAM), using the UCI Breast Cancer Wisconsin Diagnostic dataset which is accessed as a function within the script.
 
 ### Quick Setup and Execution
 To simplify the setup and execution process, the repository includes a bash script ML_Model_Comparison_KNearest_FAM.sh. This script will automatically install all required dependencies and run the Python script on an Ubuntu server.
