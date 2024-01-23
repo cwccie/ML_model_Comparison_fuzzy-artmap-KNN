@@ -59,4 +59,6 @@ sudo apt install python3-pip
 
 ######################################################################################
 
+See file Example_Output-Successful_Run.txt for an example output of successful ML_Model_Comparison_KNearest_FAM.sh execution looks like
+
 Thank You to CharlesPDX ( https://github.com/CharlesPDX ) for solving the code problems in this script that I could not
