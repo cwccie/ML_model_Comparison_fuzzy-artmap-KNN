@@ -20,7 +20,7 @@ Execute the script:
 This script will handle the installation of necessary packages, Python environment setup, and execution of the main Python script.This script will handle the installation of necessary packages, Python environment setup, and
 
 ######################################################################################
-### Manual Setup
+### Manual Setup and Execution
 **Required Packages**
 To execute the provided Python script on a newly installed machine, you will need to install several Python packages including:
 
