@@ -1,7 +1,7 @@
 # ML_model_Comparison_fuzzy-artmap-KNN
 🔍 Explore and Compare Machine Learning Models Fuzzy ARTMAP and KNN
 
-To execute the provided Python script on a newly installed machine (Ubuntu server for example), you will need to install several Python packages. Based on the script, the required packages include:
+To execute the provided Python script [ ml_model_comparison_knearest_fam.py ] on a newly installed machine (Ubuntu server for example), you will need to install several Python packages. Based on the script, the required packages include:
 
 numpy: For numerical operations.
 pandas: For data manipulation and analysis.
