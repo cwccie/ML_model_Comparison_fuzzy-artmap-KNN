@@ -1,64 +1,77 @@
-# ML_model_Comparison_fuzzy-artmap-KNN
-🔍 Explore and Compare Machine Learning Models Fuzzy ARTMAP and KNN
+# Fuzzy ARTMAP vs KNN — ML Model Comparison
 
-## Overview
-This repository contains the Python script ml_model_comparison_knearest_fam.py, which is designed to compare machine learning models, specifically K-Nearest Neighbors (KNN) and Fuzzy ARTMAP (FAM), using the UCI Breast Cancer Wisconsin Diagnostic dataset which is accessed as a function within the script.
+A comparative study of Fuzzy ARTMAP (FAM) and K-Nearest Neighbors (KNN) classifiers on the UCI Breast Cancer Wisconsin Diagnostic dataset, implemented in Python with PyTorch.
 
-######################################################################################
-### Quick Setup and Execution
-To simplify the setup and execution process, the repository includes a bash script ML_Model_Comparison_KNearest_FAM.sh. This script will automatically install all required dependencies and run the Python script on an Ubuntu server.
+## Problem
 
-**Steps to Run:**
-Download the ML_Model_Comparison_KNearest_FAM.sh script from the repository.
+Fuzzy ARTMAP is an underexplored neural network architecture with unique properties — incremental learning, category proliferation control, and transparent decision boundaries — that make it compelling for medical classification tasks. This project benchmarks FAM against the widely-used KNN baseline to quantify where adaptive resonance theory provides advantages over instance-based learning.
 
-# Install Steps
+## Results
 
-Step 1 - Navigate to the folder you would like to install the environment and execute the following sudo nano command:
-sudo nano ML_Model_Comparison_KNearest_FAM.sh
+The comparison evaluates both models across accuracy, precision, recall, F1-score, and training time on the 569-sample breast cancer dataset with 30 features.
 
-Step 2 - Paste Bash File Text content into nano. Read and understand the code and comments before using
+## Architecture
 
-Step 3 - Write and exit nano (Ctr-X, Y, enter)
+```
+UCI Breast Cancer Dataset (569 samples, 30 features)
+    ↓
+Preprocessing (StandardScaler, train/test split)
+    ↓
+┌────────────────────┬────────────────────┐
+│   Fuzzy ARTMAP     │   K-Nearest        │
+│                    │   Neighbors         │
+│ - Vigilance tuning │ - k optimization   │
+│ - Category growth  │ - Distance metrics │
+│ - Match tracking   │ - Voting scheme    │
+└────────┬───────────┴──────────┬─────────┘
+         ↓                      ↓
+    Performance Comparison
+    (Accuracy, Precision, Recall, F1, Time)
+```
 
-Step 4 - Make the script executable:
-sudo chmod +x ML_Model_Comparison_KNearest_FAM.sh
+## Quick Start
 
-Step 5 - Execute the script:
-sudo ./ML_Model_Comparison_KNearest_FAM.sh
+```bash
+git clone https://github.com/cwccie/ML_model_Comparison_fuzzy-artmap-KNN.git
+cd ML_model_Comparison_fuzzy-artmap-KNN
 
-This script will handle the installation of necessary packages, Python environment setup, and execution of the main Python script.This script will handle the installation of necessary packages, Python environment setup, and
-
-######################################################################################
-### Manual Setup and Execution
-**Required Packages**
-To execute the provided Python script on a newly installed machine, you will need to install several Python packages including:
-
-numpy: For numerical operations.
-pandas: For data manipulation and analysis.
-matplotlib: For plotting and visualization.
-scikit-learn (sklearn): For machine learning algorithms and data preprocessing.
-torch (PyTorch): For tensor operations, essential for the FAM implementation.
-ucimlrepo: For fetching datasets from the UCI Machine Learning Repository.
-Installation Commands
-
+# Install dependencies
 pip install numpy pandas matplotlib scikit-learn torch ucimlrepo
-Additional Considerations
-For a server environment, especially if it's headless, configure matplotlib to use a non-interactive backend like Agg.
-Check PyTorch's official installation guide for compatibility with your system's hardware, especially for GPU acceleration.
 
-**Running the Script Manually**
-After installing all required packages, copy the ml_model_comparison_knearest_fam.py script into a Python file or a Jupyter Notebook, and then run it in your preferred environment.
+# Run the comparison
+python ml_model_comparison_knearest_fam.py
+```
 
-######################################################################################
-### System Requirements
-Ensure that your Ubuntu server has Python 3 installed. If not, install Python 3 and pip using:
+Or open the Jupyter notebook for an interactive walkthrough:
 
-sudo apt update
-sudo apt install python3
-sudo apt install python3-pip
+```bash
+jupyter notebook ML_Model_Comparison_KNearest_FAM.ipynb
+```
 
-######################################################################################
+## Files
 
-See file Example_Output-Successful_Run.txt for an example output of successful ML_Model_Comparison_KNearest_FAM.sh execution looks like
+```
+ML_model_Comparison_fuzzy-artmap-KNN/
+├── ml_model_comparison_knearest_fam.py    # Main comparison script
+├── ML_Model_Comparison_KNearest_FAM.ipynb # Interactive Jupyter notebook
+├── ML_Model_Comparison_KNearest_FAM.sh    # Ubuntu auto-install script
+├── Example_Output-Successful_Run.txt      # Sample output reference
+└── README.md
+```
 
-Thank You to CharlesPDX ( https://github.com/CharlesPDX ) for solving the code problems in this script that I could not
+## Requirements
+
+- Python 3.8+
+- NumPy, Pandas, Matplotlib, scikit-learn, PyTorch, ucimlrepo
+
+## Related Work
+
+This project is related to the [SOFAM](https://github.com/cwccie/SOFAM) (Self-Optimizing Fuzzy-ARTMAP) research, which extends Fuzzy ARTMAP with multi-agent hyperparameter optimization for improved classification performance.
+
+## Acknowledgments
+
+Thanks to [CharlesPDX](https://github.com/CharlesPDX) for contributions to solving implementation challenges in the Fuzzy ARTMAP code.
+
+## License
+
+MIT License — see [LICENSE](LICENSE)
